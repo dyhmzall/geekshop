@@ -1,12 +1,12 @@
 from django.urls import path
 
-import authapp.views as authnapp
+import authapp.views as authapp
 
-app_name = "authnapp"
+app_name = "authapp"
 
 urlpatterns = [
-    path("login/", authnapp.login, name="login"),
-    path("logout/", authnapp.logout, name="logout"),
-    path("register/", authnapp.register, name="register"),
-    path("edit/", authnapp.edit, name="edit"),
+    path("login/", authapp.login, name="login"),
+    path("logout/", authapp.logout, name="logout"),
+    path("register/", authapp.register, name="register"),
+    path("edit/", authapp.edit, name="edit"),
 ]
